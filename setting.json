@@ -4,7 +4,57 @@
         "hostName": "example",
         "admin": "admin@example.com"
     },
-    "hosting": [],
+    "hosting": [
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "bar4.com"
+                ]
+            },
+            "name": "foo.com",
+            "enable": true
+        },
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "demo.winesoft.com"
+                ]
+            },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "enable": true
+                        }
+                    }
+                }
+            },
+            "name": "test8.winesoft.com",
+            "urlRewrites": [
+                {
+                    "replace": "#1.bar.com/#2",
+                    "pattern": "www.foo.com/([^/]+)/(.*)"
+                },
+                {
+                    "replace": "#1.exmaple.com/#2",
+                    "pattern": "www.exmaple.com/([^/]+)/(.*)"
+                },
+                {
+                    "replace": "b9",
+                    "pattern": "a9"
+                },
+                {
+                    "pattern": "a",
+                    "replace": "b"
+                }
+            ],
+            "enable": true
+        }
+    ],
     "env": {
         "log": {
             "info": {
