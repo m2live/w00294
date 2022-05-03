@@ -28,30 +28,56 @@
                 "contents": {
                     "dims": {
                         "meta": {
-                            "enable": true
+                            "maxSourceSize": 56,
+                            "keyword": "dims4",
+                            "enable": true,
+                            "minSourceSize": 0
                         }
                     }
                 }
             },
-            "name": "test8.winesoft.com",
             "urlRewrites": [
                 {
-                    "replace": "#1.bar.com/#2",
-                    "pattern": "www.foo.com/([^/]+)/(.*)"
+                    "pattern": "www.foo.com/([^/]+)/(.*)",
+                    "replace": "#1.bar.com/#2"
                 },
                 {
-                    "replace": "#1.exmaple.com/#2",
-                    "pattern": "www.exmaple.com/([^/]+)/(.*)"
+                    "pattern": "www.exmaple.com/([^/]+)/(.*)",
+                    "replace": "#1.exmaple.com/#2"
                 },
                 {
                     "replace": "b9",
                     "pattern": "a9"
                 },
                 {
-                    "pattern": "a",
-                    "replace": "b"
+                    "replace": "b",
+                    "pattern": "a"
                 }
             ],
+            "name": "test9.winesoft.com",
+            "enable": true
+        },
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "origin.winesoft.com"
+                ]
+            },
+            "name": "image.winesoft.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "maxSourceSize": 100,
+                            "keyword": "dims",
+                            "enable": true,
+                            "minSourceSize": 0
+                        }
+                    }
+                }
+            },
             "enable": true
         }
     ],
