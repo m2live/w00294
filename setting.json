@@ -24,6 +24,19 @@
                     "demo.winesoft.com"
                 ]
             },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "enable": true,
+                            "maxSourceSize": 56,
+                            "keyword": "dims4",
+                            "minSourceSize": 0
+                        }
+                    }
+                }
+            },
+            "name": "test9.winesoft.com",
             "urlRewrites": [
                 {
                     "pattern": "www.foo.com/([^/]+)/(.*)",
@@ -42,19 +55,6 @@
                     "replace": "b"
                 }
             ],
-            "name": "test9.winesoft.com",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "maxSourceSize": 56,
-                            "enable": true,
-                            "keyword": "dims4",
-                            "minSourceSize": 0
-                        }
-                    }
-                }
-            },
             "enable": true
         },
         {
@@ -71,9 +71,30 @@
                     "dims": {
                         "meta": {
                             "maxSourceSize": 78,
-                            "keyword": "dims",
                             "enable": true,
+                            "keyword": "dims",
                             "minSourceSize": 16
+                        }
+                    }
+                }
+            },
+            "enable": true
+        },
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "test.winesoft.com"
+                ]
+            },
+            "name": "test2.winesoft.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "enable": true
                         }
                     }
                 }
