@@ -28,33 +28,33 @@
                 "contents": {
                     "dims": {
                         "meta": {
+                            "keyword": "dims4",
                             "enable": true,
                             "maxSourceSize": 56,
-                            "keyword": "dims4",
                             "minSourceSize": 0
                         }
                     }
                 }
             },
-            "name": "test9.winesoft.com",
             "urlRewrites": [
                 {
-                    "pattern": "www.foo.com/([^/]+)/(.*)",
-                    "replace": "#1.bar.com/#2"
+                    "replace": "#1.bar.com/#2",
+                    "pattern": "www.foo.com/([^/]+)/(.*)"
                 },
                 {
                     "pattern": "www.exmaple.com/([^/]+)/(.*)",
                     "replace": "#1.exmaple.com/#2"
                 },
                 {
-                    "replace": "b9",
-                    "pattern": "a9"
+                    "pattern": "a9",
+                    "replace": "b9"
                 },
                 {
                     "pattern": "a",
                     "replace": "b"
                 }
             ],
+            "name": "test9.winesoft.com",
             "enable": true
         },
         {
@@ -65,15 +65,38 @@
                     "origin.winesoft.com"
                 ]
             },
-            "name": "image.winesoft.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "maxSourceSize": 78,
-                            "enable": true,
+                            "minSourceSize": 16,
                             "keyword": "dims",
-                            "minSourceSize": 16
+                            "maxSourceSize": 78,
+                            "enable": true
+                        }
+                    }
+                }
+            },
+            "name": "image.winesoft.com",
+            "enable": true
+        },
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "test.winesoft.com"
+                ]
+            },
+            "name": "test3.winesoft.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "minSourceSize": 12,
+                            "maxSourceSize": 82,
+                            "enable": true
                         }
                     }
                 }
@@ -85,20 +108,28 @@
             "origin": {
                 "protocol": "HTTPS",
                 "address": [
-                    "test.winesoft.com"
+                    "origin.winesoft.com"
                 ]
             },
-            "name": "test2.winesoft.com",
+            "name": "test6.winesoft.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
-                            "keyword": "dims",
-                            "enable": true
+                            "enable": true,
+                            "maxSourceSize": 97,
+                            "minSourceSize": 5,
+                            "keyword": "dims"
                         }
                     }
                 }
             },
+            "urlRewrites": [
+                {
+                    "pattern": "aa",
+                    "replace": "bb"
+                }
+            ],
             "enable": true
         }
     ],
