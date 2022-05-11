@@ -24,14 +24,26 @@
                     "demo.winesoft.com"
                 ]
             },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims4",
+                            "maxSourceSize": 56,
+                            "enable": true,
+                            "minSourceSize": 0
+                        }
+                    }
+                }
+            },
             "urlRewrites": [
                 {
-                    "replace": "#1.bar.com/#2",
-                    "pattern": "www.foo.com/([^/]+)/(.*)"
+                    "pattern": "www.foo.com/([^/]+)/(.*)",
+                    "replace": "#1.bar.com/#2"
                 },
                 {
-                    "replace": "#1.exmaple.com/#2",
-                    "pattern": "www.exmaple.com/([^/]+)/(.*)"
+                    "pattern": "www.exmaple.com/([^/]+)/(.*)",
+                    "replace": "#1.exmaple.com/#2"
                 },
                 {
                     "replace": "b9",
@@ -42,18 +54,6 @@
                     "pattern": "a"
                 }
             ],
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "keyword": "dims4",
-                            "minSourceSize": 0,
-                            "maxSourceSize": 56,
-                            "enable": true
-                        }
-                    }
-                }
-            },
             "name": "test9.winesoft.com",
             "enable": true
         },
@@ -70,9 +70,9 @@
                 "contents": {
                     "dims": {
                         "meta": {
+                            "enable": true,
                             "minSourceSize": 16,
                             "maxSourceSize": 78,
-                            "enable": true,
                             "keyword": "dims"
                         }
                     }
@@ -88,6 +88,7 @@
                     "test.winesoft.com"
                 ]
             },
+            "name": "test3.winesoft.com",
             "functions": {
                 "contents": {
                     "dims": {
@@ -100,7 +101,6 @@
                     }
                 }
             },
-            "name": "test3.winesoft.com",
             "enable": true
         },
         {
@@ -115,21 +115,21 @@
                 "contents": {
                     "dims": {
                         "meta": {
-                            "keyword": "dims",
+                            "minSourceSize": 5,
                             "enable": true,
-                            "maxSourceSize": 97,
-                            "minSourceSize": 5
+                            "keyword": "dims",
+                            "maxSourceSize": 97
                         }
                     }
                 }
             },
-            "name": "test6.winesoft.com",
             "urlRewrites": [
                 {
                     "pattern": "aa",
                     "replace": "bb"
                 }
             ],
+            "name": "test6.winesoft.com",
             "enable": true
         },
         {
@@ -144,15 +144,38 @@
                 "contents": {
                     "dims": {
                         "meta": {
-                            "maxSourceSize": 100,
                             "enable": true,
-                            "minSourceSize": 0,
-                            "keyword": "dims"
+                            "maxSourceSize": 100,
+                            "keyword": "dims",
+                            "minSourceSize": 0
                         }
                     }
                 }
             },
             "name": "test4.winesoft.com",
+            "enable": true
+        },
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "origin.winesoft.com"
+                ]
+            },
+            "name": "test5.winesoft.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "maxSourceSize": 100,
+                            "minSourceSize": 0,
+                            "enable": true
+                        }
+                    }
+                }
+            },
             "enable": true
         }
     ],
