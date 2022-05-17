@@ -448,67 +448,6 @@
                         "dissolve": 50
                     }
                 ]
-            },
-            "dvhls": {
-                "mp4": {
-                    "run": {
-                        "enable": false,
-                        "keyword": "mp4hls",
-                        "duration": 10
-                    },
-                    "playlist": {
-                        "version": 3,
-                        "alternates": false,
-                        "indexName": "index.m3u8",
-                        "alternatesName": "playlist.m3u8",
-                        "sequence": 0
-                    }
-                },
-                "mp3": {
-                    "meta": {
-                        "enable": false,
-                        "keyword": "mp3hls",
-                        "duration": 10,
-                        "segmentType": "ts",
-                        "insertPcr": false
-                    },
-                    "playlist": {
-                        "version": 3,
-                        "alternates": false,
-                        "indexName": "index.m3u8",
-                        "alternatesName": "playlist.m3u8",
-                        "sequence": 0
-                    }
-                }
-            },
-            "dvtrim": {
-                "upfrontHeader": {
-                    "mp4": false,
-                    "m4a": false
-                },
-                "trimming": {
-                    "mp4": {
-                        "enable": false,
-                        "allTracks": false,
-                        "startParam": "start",
-                        "endParam": "end",
-                        "multiParam": "trimming",
-                        "maxRatio": 50
-                    },
-                    "m4a": {
-                        "enable": false,
-                        "startParam": "start",
-                        "endParam": "end",
-                        "multiParam": "trimming"
-                    },
-                    "mp3": {
-                        "trimming": {
-                            "enable": false,
-                            "startParam": "start",
-                            "endParam": "end"
-                        }
-                    }
-                }
             }
         },
         "network": {
@@ -655,18 +594,6 @@
                         "enable": false,
                         "denialCode": 401,
                         "mode": "deny"
-                    },
-                    "compression": {
-                        "enable": false,
-                        "minSrcSize": 2,
-                        "maxSrcSize": 2048,
-                        "gzip": {
-                            "level": 6
-                        },
-                        "brotli": {
-                            "window": 22,
-                            "quality": 11
-                        }
                     },
                     "customErrorPage": {
                         "resCode": 0,
