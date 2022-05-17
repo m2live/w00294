@@ -24,10 +24,23 @@
                     "demo.winesoft.com"
                 ]
             },
+            "name": "test9.winesoft.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "minSourceSize": 0,
+                            "maxSourceSize": 56,
+                            "keyword": "dims4",
+                            "enable": true
+                        }
+                    }
+                }
+            },
             "urlRewrites": [
                 {
-                    "replace": "#1.bar.com/#2",
-                    "pattern": "www.foo.com/([^/]+)/(.*)"
+                    "pattern": "www.foo.com/([^/]+)/(.*)",
+                    "replace": "#1.bar.com/#2"
                 },
                 {
                     "pattern": "www.exmaple.com/([^/]+)/(.*)",
@@ -38,23 +51,10 @@
                     "replace": "b9"
                 },
                 {
-                    "replace": "b",
-                    "pattern": "a"
+                    "pattern": "a",
+                    "replace": "b"
                 }
             ],
-            "name": "test9.winesoft.com",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "maxSourceSize": 56,
-                            "keyword": "dims4",
-                            "enable": true,
-                            "minSourceSize": 0
-                        }
-                    }
-                }
-            },
             "enable": true
         },
         {
@@ -69,10 +69,10 @@
                 "contents": {
                     "dims": {
                         "meta": {
+                            "maxSourceSize": 78,
                             "enable": true,
                             "minSourceSize": 16,
-                            "keyword": "dims",
-                            "maxSourceSize": 78
+                            "keyword": "dims"
                         }
                     }
                 }
@@ -93,10 +93,10 @@
                 "contents": {
                     "dims": {
                         "meta": {
-                            "maxSourceSize": 82,
                             "keyword": "dims",
-                            "minSourceSize": 12,
-                            "enable": true
+                            "enable": true,
+                            "maxSourceSize": 82,
+                            "minSourceSize": 12
                         }
                     }
                 }
@@ -123,9 +123,9 @@
                     "dims": {
                         "meta": {
                             "keyword": "dims",
+                            "enable": true,
                             "minSourceSize": 5,
-                            "maxSourceSize": 97,
-                            "enable": true
+                            "maxSourceSize": 97
                         }
                     }
                 }
@@ -139,20 +139,20 @@
                 "address": [
                     "origin.winesoft.com"
                 ]
-            },
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "maxSourceSize": 100,
-                            "enable": true,
-                            "keyword": "dims",
-                            "minSourceSize": 0
-                        }
-                    }
-                }
             },
             "name": "test4.winesoft.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "enable": true,
+                            "maxSourceSize": 100,
+                            "minSourceSize": 0
+                        }
+                    }
+                }
+            },
             "enable": true
         },
         {
@@ -162,20 +162,20 @@
                 "address": [
                     "origin.winesoft.com"
                 ]
+            },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "keyword": "dims",
+                            "enable": true,
+                            "minSourceSize": 0,
+                            "maxSourceSize": 100
+                        }
+                    }
+                }
             },
             "name": "test7.winesoft.com",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "enable": true,
-                            "maxSourceSize": 100,
-                            "keyword": "dims",
-                            "minSourceSize": 0
-                        }
-                    }
-                }
-            },
             "enable": true
         },
         {
@@ -185,20 +185,20 @@
                 "address": [
                     "origin.winesoft.com"
                 ]
+            },
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "maxSourceSize": 100,
+                            "enable": true,
+                            "keyword": "dims",
+                            "minSourceSize": 0
+                        }
+                    }
+                }
             },
             "name": "test8.winesoft.com",
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "maxSourceSize": 100,
-                            "enable": true,
-                            "keyword": "dims",
-                            "minSourceSize": 0
-                        }
-                    }
-                }
-            },
             "enable": true
         },
         {
@@ -209,48 +209,42 @@
                     "origin.winesoft.com"
                 ]
             },
-            "name": "foo2.com",
             "functions": {
                 "contents": {
                     "dims": {
                         "meta": {
                             "enable": true,
+                            "minSourceSize": 0,
                             "maxSourceSize": 100,
-                            "keyword": "dims",
-                            "minSourceSize": 0
-                        }
-                    }
-                }
-            },
-            "enable": true
-        },
-        {
-            "listen": "*:80",
-            "origin": {
-                "protocol": "HTTPS",
-                "address": [
-                    "origin.winesoft.com"
-                ]
-            },
-            "urlRewrites": [
-                {
-                    "replace": "b",
-                    "pattern": "a"
-                }
-            ],
-            "functions": {
-                "contents": {
-                    "dims": {
-                        "meta": {
-                            "maxSourceSize": 87,
-                            "enable": true,
-                            "minSourceSize": 10,
                             "keyword": "dims"
                         }
                     }
                 }
             },
+            "name": "foo2.com",
+            "enable": true
+        },
+        {
+            "listen": "*:80",
+            "origin": {
+                "protocol": "HTTPS",
+                "address": [
+                    "origin.winesoft.com"
+                ]
+            },
             "name": "foo3.com",
+            "functions": {
+                "contents": {
+                    "dims": {
+                        "meta": {
+                            "maxSourceSize": 16,
+                            "enable": true,
+                            "minSourceSize": 0,
+                            "keyword": "dims"
+                        }
+                    }
+                }
+            },
             "enable": true
         }
     ],
@@ -697,6 +691,67 @@
                         "dissolve": 50
                     }
                 ]
+            },
+            "dvhls": {
+                "mp4": {
+                    "run": {
+                        "enable": false,
+                        "keyword": "mp4hls",
+                        "duration": 10
+                    },
+                    "playlist": {
+                        "version": 3,
+                        "alternates": false,
+                        "indexName": "index.m3u8",
+                        "alternatesName": "playlist.m3u8",
+                        "sequence": 0
+                    }
+                },
+                "mp3": {
+                    "meta": {
+                        "enable": false,
+                        "keyword": "mp3hls",
+                        "duration": 10,
+                        "segmentType": "ts",
+                        "insertPcr": false
+                    },
+                    "playlist": {
+                        "version": 3,
+                        "alternates": false,
+                        "indexName": "index.m3u8",
+                        "alternatesName": "playlist.m3u8",
+                        "sequence": 0
+                    }
+                }
+            },
+            "dvtrim": {
+                "upfrontHeader": {
+                    "mp4": false,
+                    "m4a": false
+                },
+                "trimming": {
+                    "mp4": {
+                        "enable": false,
+                        "allTracks": false,
+                        "startParam": "start",
+                        "endParam": "end",
+                        "multiParam": "trimming",
+                        "maxRatio": 50
+                    },
+                    "m4a": {
+                        "enable": false,
+                        "startParam": "start",
+                        "endParam": "end",
+                        "multiParam": "trimming"
+                    },
+                    "mp3": {
+                        "trimming": {
+                            "enable": false,
+                            "startParam": "start",
+                            "endParam": "end"
+                        }
+                    }
+                }
             }
         },
         "network": {
@@ -843,6 +898,18 @@
                         "enable": false,
                         "denialCode": 401,
                         "mode": "deny"
+                    },
+                    "compression": {
+                        "enable": false,
+                        "minSrcSize": 2,
+                        "maxSrcSize": 2048,
+                        "gzip": {
+                            "level": 6
+                        },
+                        "brotli": {
+                            "window": 22,
+                            "quality": 11
+                        }
                     },
                     "customErrorPage": {
                         "resCode": 0,
